@@ -12,7 +12,7 @@
     <?php
       include 'navbar.php';
       ?>
-        <div class="container card m-auto col-md-6 p-0 rounded-3 mt-5 ">
+        <div class=" card m-auto col-md-6 p-0 rounded-3 mt-5 ">
             <div class="card-header d-flex justify-content-center ">
             <h1>Add New Question Pool</h1>
         </div>
@@ -26,7 +26,7 @@
               
                 <div class="mb-1 p-2">
                     <label for="exampleInputdescription" class="form-label">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enetr Description"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter Description"></textarea>
                 </div>
                     
                     

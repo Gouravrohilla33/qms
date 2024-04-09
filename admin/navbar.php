@@ -11,7 +11,7 @@
         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Question Pools</a>
+        <a class="nav-link" href="all_pools.php">Question Pools</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="result_by_roll.php">Result by Roll</a>

@@ -18,7 +18,7 @@ if(isset($_POST['login'])){
     $result = $con->query($sql);
     
     if(isset($result)){
-        echo "<script>alert('logged in successfully');window.location='admin/index.php' </script>";
+        echo "<script>window.location='admin/index.php' </script>";
     }
 }
 $sql = "INSERT INTO `student_data` ( `name`, `roll`, `course`, `year`, `email`, `password`,`cpassword`, `dt`) VALUES ( '$name',' $roll','$course',' $year',' $email', '$password','$cpassword', current_timestamp())";

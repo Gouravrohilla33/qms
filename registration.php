@@ -13,7 +13,7 @@
             <img src="images/geeta univesity logo.jpeg" alt="geeta university logo" >
         </div>
 
-        <div class="container card m-auto col-md-6 p-0 rounded-3 ">
+        <div class=" card m-auto col-md-6 p-0 rounded-3 ">
             <div class="card-header d-flex justify-content-center ">
             Registration Form
         </div>
@@ -42,7 +42,9 @@
             </div>
             <div class="mb-3 p-2">
                 <input type="password" name="cpassword" class="form-control" id="exampleInputPassword2"  placeholder="Confirm Your Password">
+                
             </div>
+             
         </div>
           
             <div class="d-flex justify-content-center " style="padding-top: 10px;">

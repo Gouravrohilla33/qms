@@ -20,7 +20,6 @@
 
             <form action="" method="post">
             
-              <label for="exampleInputresult_by_roll" class="form-label"></label>
               <input type="phone" name="result_by_roll" class="form-control" id="exampleInputresult_by_roll" placeholder="Enter user's Roll Number">
               
             </div>
