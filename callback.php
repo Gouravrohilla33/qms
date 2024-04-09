@@ -8,6 +8,7 @@ if(isset($_POST['submit'])){
     $year = $_POST['year'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $cpassword = $_POST['cpassword'];
 }
 if(isset($_POST['login'])){
     $email = $_POST['email'];
@@ -17,11 +18,14 @@ if(isset($_POST['login'])){
     $result = $con->query($sql);
     
     if(isset($result)){
-        echo "<script>alert('logged in successfully'); </script>";
+        echo "<script>alert('logged in successfully');window.location='admin/index.php' </script>";
     }
 }
-$sql = "INSERT INTO `student_data` ( `name`, `roll`, `course`, `year`, `email`, `password`, `dt`) VALUES ( '$name',' $roll','$course',' $year',' $email', '$password', current_timestamp())";
-if($con->query($sql) === TRUE){
- echo" data inserted succesfully <script>window.location='login.php'</script>";
+$sql = "INSERT INTO `student_data` ( `name`, `roll`, `course`, `year`, `email`, `password`,`cpassword`, `dt`) VALUES ( '$name',' $roll','$course',' $year',' $email', '$password','$cpassword', current_timestamp())";
+if($con->query($sql) === TRUE && $password == $cpassword){
+ echo"  <script>window.location='login.php'</script>";
+}
+else{
+    echo"<script>alert('password not match');window.location='registration.php'</script>";
 }
 ?>

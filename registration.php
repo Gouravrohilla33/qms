@@ -40,6 +40,10 @@
             <div class="mb-3 p-2">
               <input type="password" name="password" class="form-control" id="exampleInputPassword1"  placeholder="Enter Your Password">
             </div>
+            <div class="mb-3 p-2">
+                <input type="password" name="cpassword" class="form-control" id="exampleInputPassword2"  placeholder="Confirm Your Password">
+            </div>
+        </div>
           
             <div class="d-flex justify-content-center " style="padding-top: 10px;">
             
