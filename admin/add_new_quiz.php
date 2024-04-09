@@ -35,7 +35,7 @@
         <hr>
         <h5>Quiz details:</h5>
         <input type="text" name="quiz_name" class="form-control" id="exampleInputquiz_name" placeholder="Enter Quiz Name">
-        <textarea name="quiz_rules" id="rules" cols="82" rows="5" style ="margin-top: 10px; margin-bottom:10px;" placeholder="Enter Quiz Rules"></textarea>
+        <textarea name="quiz_rules" id="rules" cols="72" rows="5" style ="margin-top: 10px; margin-bottom:10px;" placeholder="Enter Quiz Rules"></textarea>
         <input type="number" name="quiz_time" class="form-control" id="exampleInputtime" placeholder="Enter Quiz Time in Minutes">
         <hr>
         <input type="date" name="quiz_date" class="form-control" id="exampleInputquiz_date">
