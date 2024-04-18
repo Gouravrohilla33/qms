@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>result by roll</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-    <div class="mycontainer">
-    <?php
+
+<?php
       include 'navbar.php';
+      include '../header.php';
+      
       ?>
+      <div class="mycontainer">
         <div class="container card m-auto col-md-6 p-0 rounded-3 mt-5 ">
             <div class="card-header d-flex justify-content-center ">
             <h1>Student Progress</h1>

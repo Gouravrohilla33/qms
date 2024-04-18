@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<?php
+include 'header.php';
+?>
     <div class="mycontainer">
         <div class="logo" style="height: 10px;" >
             <img src="images/geeta univesity logo.jpeg" alt="geeta university logo" >
@@ -42,7 +35,7 @@
             </div>
             <div class="mb-3 p-2">
                 <input type="password" name="cpassword" class="form-control" id="exampleInputPassword2"  placeholder="Confirm Your Password">
-                
+               
             </div>
              
         </div>
@@ -51,6 +44,7 @@
             
             <button type="submit" name="submit" class="btn btn-outline-dark btn-lg m-1 submit ">Submit</button>
         </div>
+        <h5 class="color" style="text-align: center;">Already a member ?&nbsp;&nbsp;&nbsp;<a href="login.php" class="login" id="login2">Log in</a></h5>
           </form>
         </div>
     </div>

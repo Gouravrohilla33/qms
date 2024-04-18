@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<?php 
+include 'config.php';
+include 'header.php';
+
+if(isset($_SESSION['id'])){
+    header("location: index.php");
+}
+else if (isset($_SESSION['admin'])){
+    header("location: admin/index.php");
+}
+
+?>
+
+
     <div class="mycontainer">
         <div class="logo" style="height: 100px;" >
             <img src="images/geeta univesity logo.jpeg" alt="geeta university logo" >
@@ -32,6 +36,8 @@
             
             <button type="submit" name="login" class="btn btn-outline-dark btn-lg m-1 submit ">Login</button>
         </div>
+        <h4 class="color" style="text-align: center;">Create an Account !&nbsp;&nbsp;&nbsp;<a href="registration.php"
+        class="login" id="login2">Registration</a></h4>
           </form>
         </div>
     </div>

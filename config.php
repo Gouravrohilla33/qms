@@ -5,6 +5,8 @@ $user = "root";
 $password = "";
 $db = "qms";
 
+session_start();
+
 $con = new mysqli($host, $user, $password, $db);
 if($con->connect_error){
     die("Connection failed" . $con->connect_error);
@@ -13,4 +15,14 @@ if($con->connect_error){
 else
 echo("sucess");
 */
+
+if(isset($_POST['logout'])){
+    session_unset();
+    session_destroy();
+}
+
+if(!isset($_SESSION)){
+    header("location: login.php");
+}
+
 ?>

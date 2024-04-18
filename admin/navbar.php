@@ -1,4 +1,8 @@
+<?php
 
+// include "../config.php";
+
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
 <div class="container-fluid">
   <a class="navbar-brand" href="#">Quiz Manager</a>
@@ -29,9 +33,9 @@
       </li>
    
     </ul>
-    <form class="d-flex">
+    <form class="d-flex"  method="post">
      
-      <button class="btn btn-outline-danger" type="reset">Logout</button>
+      <button class="btn btn-outline-danger" type="submit" name="logout">Logout</button>
     </form>
   </div>
 </div>

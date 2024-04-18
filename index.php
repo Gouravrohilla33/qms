@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>result by roll</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<?php
+include 'config.php';
+include 'header.php';
+
+if(!isset($_SESSION['id'])){
+    header("location: login.php");  
+}
+
+
+
+?>
+
     <div class="main"  style="color:white;">
-    <form class="d-flex" style="margin-left:100%">
+    <form class="d-flex" method="post" style="margin-left:100%">
      
-      <button class="btn btn-outline-danger" type="reset">Logout</button>
+      <button class="btn btn-outline-danger" type="submit" name='logout'>Logout</button>
     </form>
     <div class="logo" style="height: auto;" >
             <img src="images/geeta univesity logo.jpeg" alt="geeta university logo" >
