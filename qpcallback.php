@@ -19,7 +19,7 @@ if ($con->query($sql) == TRUE ) {
         PRIMARY key (`id`)
     ) ENGINE=InnoDB DEFAULT CHARSET = utf8mb4";
     $con->query($sql2);
-    echo "<script>alert('Pool suscessfully add'); window.location='admin/all_pools.php';</script>"; 
+    echo "<script>alert('Pool successfully add'); window.location='admin/all_pools.php';</script>"; 
 }
 else {
     echo "Error: " . "<br>" . $conn->error;

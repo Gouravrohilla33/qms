@@ -30,8 +30,8 @@ include '../header.php';
               <p><?php echo $row['desc'] ;  ?></p>
             </div>
             <div class="d-flex justify-content-center " style="padding-top: 10px;">
-              <button type="submit" name="veiw" class="btn btn-outline-dark btn-lg m-1 submit ">Veiw Deatils</button>
-              <button type="submit" name="delet" class="btn btn-outline-danger btn-lg m-1 submit ">Delet Pool</button>
+              <button type="submit" name="veiw" class="btn btn-outline-dark btn-lg m-1 submit ">View Deatils</button>
+              <button type="submit" name="delet" class="btn btn-outline-danger btn-lg m-1 submit ">Delete Pool</button>
             </div> 
             </div> 
 
