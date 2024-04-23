@@ -16,6 +16,7 @@ else
 echo("sucess");
 */
 
+
 if(isset($_POST['logout'])){
     session_unset();
     session_destroy();
@@ -24,5 +25,7 @@ if(isset($_POST['logout'])){
 if(!isset($_SESSION)){
     header("location: login.php");
 }
+
+
 
 ?>

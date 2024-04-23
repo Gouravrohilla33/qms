@@ -11,15 +11,32 @@ include '../header.php';
         </div>
         <div class="card-body p-4 pb-0 ">
 
-            <form action="" method="post">
+            <form action="../qpcallback.php" method="post">
                 <div class="mb-2 p-2">
                     <label for="exampleInputsubject" class="form-label">Subject</label>
                     <input type="text" name="subject" class="form-control" id="exampleInputsubject" placeholder="Enter Subject Name">
                 </div>
+                <div class="mb-2 p-2">
+                    <label for="exampleInputcourse" class="form-label">Course</label>
+                    <input type="text" name="course" class="form-control" id="exampleInputcourse" placeholder="Enter Subject Name">
+                </div>
+                <div class="mb-2 p-2">
+                    <label for="exampleInputsubject" class="form-label">Semester</label>
+                    <select name="sem" class="form-select" id="">
+                        <option value="1">1st</option>
+                        <option value="2">2nd</option>
+                        <option value="3">3rd</option>
+                        <option value="4">4th</option>
+                        <option value="5">5th</option>
+                        <option value="6">6th</option>
+                        <option value="7">7th</option>
+                        <option value="8">8th</option>
+                    </select>
+                </div>
               
                 <div class="mb-1 p-2">
                     <label for="exampleInputdescription" class="form-label">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter Description"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="desc" rows="5" placeholder="Enter Description"></textarea>
                 </div>
                     
                     
@@ -28,7 +45,7 @@ include '../header.php';
                 
                 <div class="d-flex  " style="padding-top: 10px; padding-left: 85%;">
                     
-                    <button type="submit" name="login" class="btn btn-outline-dark btn-sg m-1 submit ">Add</button>
+                    <button type="submit" name="submit" class="btn btn-outline-dark btn-sg m-1 submit ">Add</button>
                 </div>
             </form>
         </div>

@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $roll = $_POST['roll'];
     $course = $_POST['course'];
-    $year = $_POST['year'];
+    $sem = $_POST['sem'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $cpassword = $_POST['cpassword'];
@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
     
 
     if( $password == $cpassword){
-        $sql = "INSERT INTO student_data ( `name`, `roll`, `course`, `year`, `email`, `password`, `cpassword`, `dt`) VALUES ( '$name', '$roll', '$course', '$year', '$email', '$password', '$cpassword', current_timestamp())";
+        $sql = "INSERT INTO student_data ( `name`, `roll`, `course`, `sem`, `email`, `password`, `cpassword`, `dt`) VALUES ( '$name', '$roll', '$course', '$year', '$email', '$password', '$cpassword', current_timestamp())";
         if ($con->query($sql) === TRUE ) {
             
             header("location: login.php");  

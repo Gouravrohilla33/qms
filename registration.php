@@ -24,7 +24,17 @@ include 'header.php';
                     <input type="text" name="course" class="form-control " id="exampleInputcourse" placeholder="Enter Your course" >
                     </div>
                 <div class="mb-3 p-2">
-                    <input type="text" name="year" class="form-control " id="exampleInputyear"  placeholder="Enter Your course Year">
+                <select name="sem" class="form-select" id="" >
+                    <option value="0">Select Your Course Semester</option>
+                        <option value="1">1st</option>
+                        <option value="2">2nd</option>
+                        <option value="3">3rd</option>
+                        <option value="4">4th</option>
+                        <option value="5">5th</option>
+                        <option value="6">6th</option>
+                        <option value="7">7th</option>
+                        <option value="8">8th</option>
+                    </select>
                     </div>
                 <div class="mb-3 p-2">
                     <input type="email" name="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Enter Your Email">
