@@ -3,6 +3,9 @@
       include 'navbar.php';
       include '../header.php';
       
+if(!isset($_SESSION['admin'])){
+  header("location: ../login.php");
+}
       ?>
       <div class="mycontainer">
         <div class="container card m-auto col-md-6 p-0 rounded-3 mt-5 ">

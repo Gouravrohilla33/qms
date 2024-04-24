@@ -24,7 +24,7 @@ if(!isset($_SESSION['id'])){
         </div>
 <div class="row d-flex justify-content-center">
     
-<div class="card m-2 col-md-3 p-0 rounded-3 mt-5 " style="background-color:blue;">
+<div class="card m-2 col-md-3 p-0 rounded-3 mt-5 "style="background-color:blue;" >
     <div class=" d-flex justify-content-center ">
         <h1>OS Development</h1>
     </div>

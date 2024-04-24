@@ -1,6 +1,10 @@
 <?php
 include '../config.php';
 include '../header.php';
+
+if(!isset($_SESSION['admin'])){
+  header("location: ../login.php");
+}
 ?>
 <div class="mycontainer">
   <div class="row d-flex justify-content-center">
@@ -11,6 +15,7 @@ include '../header.php';
       ?>
       
       <?php
+      // display pool by using loop
       while($row = $result->fetch_assoc()){
         ?>
       

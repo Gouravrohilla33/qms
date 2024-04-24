@@ -1,9 +1,14 @@
 <?php
 include '../header.php';
+
+if(!isset($_SESSION['admin'])){
+    header("location: ../login.php");
+  }
 ?>
     <div class="mycontainer">
     <?php
       include 'navbar.php';
+      
       ?>
 
 
