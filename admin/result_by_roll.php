@@ -2,6 +2,7 @@
 <?php
       include 'navbar.php';
       include '../header.php';
+      include '../config.php';
       
 if(!isset($_SESSION['admin'])){
   header("location: ../login.php");
