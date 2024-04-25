@@ -21,8 +21,17 @@ include 'header.php';
                     <input type="phone" name="roll" class="form-control " id="exampleInputroll"   placeholder="Enter Your Roll Number">
                     </div>
                 <div class="mb-3 p-2">
-                    <input type="text" name="course" class="form-control " id="exampleInputcourse" placeholder="Enter Your course" >
-                    </div>
+                <select name="course" class="form-select" id="">
+                        <option value="0">Select your cousre</option>
+                        <option value="btech">Btech</option>
+                        <option value="bca">BCA</option>
+                        <option value="mtech">Mtech</option>
+                        <option value="ba">BA</option>
+                        <option value="bba">BBA</option>
+                        <option value="mca">MCA</option>
+                        <option value="ma">MA</option>
+                        <option value="bcom">BCOM</option>
+                    </select>
                 <div class="mb-3 p-2">
                 <select name="sem" class="form-select" id="" >
                     <option value="0">Select Your Course Semester</option>

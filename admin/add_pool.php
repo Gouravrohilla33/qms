@@ -23,7 +23,17 @@ if(!isset($_SESSION['admin'])){
                 </div>
                 <div class="mb-2 p-2">
                     <label for="exampleInputcourse" class="form-label">Course</label>
-                    <input type="text" name="course" class="form-control" id="exampleInputcourse" placeholder="Enter Subject Name">
+                    <select name="course" class="form-select" id="">
+                        <option value="0">Select your cousre</option>
+                        <option value="btech">Btech</option>
+                        <option value="bca">BCA</option>
+                        <option value="mtech">Mtech</option>
+                        <option value="ba">BA</option>
+                        <option value="bba">BBA</option>
+                        <option value="mca">MCA</option>
+                        <option value="ma">MA</option>
+                        <option value="bcom">BCOM</option>
+                    </select>
                 </div>
                 <div class="mb-2 p-2">
                     <label for="exampleInputsubject" class="form-label">Semester</label>

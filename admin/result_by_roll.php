@@ -1,6 +1,6 @@
 
 <?php
-      include 'navbar.php';
+         
       include '../header.php';
       include '../config.php';
       
@@ -9,6 +9,9 @@ if(!isset($_SESSION['admin'])){
 }
       ?>
       <div class="mycontainer">
+      <?php
+      include 'navbar.php';
+      ?>
         <div class="container card m-auto col-md-6 p-0 rounded-3 mt-5 ">
             <div class="card-header d-flex justify-content-center ">
             <h1>Student Progress</h1>
