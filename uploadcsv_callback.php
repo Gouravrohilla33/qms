@@ -8,7 +8,7 @@ if(isset($_POST['upload'])){
     $file_extension  = pathinfo($file['name'], PATHINFO_EXTENSION);
     
     if($file_extension == 'csv'){
-        // read
+        // read  
         $csv_data = array_map('str_getcsv',file($file['tmp_name']));
         // extract header and data
         $header = array_shift($csv_data);

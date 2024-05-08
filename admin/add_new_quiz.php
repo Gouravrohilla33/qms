@@ -40,22 +40,69 @@ if(!isset($_SESSION['admin'])){
         <input type="date" name="quiz_date" class="form-control" id="exampleInputquiz_date">
         <hr>
         <h5>Quiz starts at:</h5>
-        <select name="course" style="padding-right:85%; margin-bottom:10px" >
-            <option value="Btech">Btech</option>
-            <option value="Btech(CS)">Btech (CS)</option>
-            <option value="MCA">MCA</option>
-            <option value="BCA">BCA</option>
-        </select>
-        <select name="year" style="padding-right:92%; margin-bottom:10px;" >
-            <option value="1st">1st</option>
-            <option value="2nd">2nd</option>
-            <option value="3rd">3rd</option>
-            <option value="4th">4th</option>
-        </select>
-        <div class="d-flex" style="padding-left:88%">
 
-            <button type="submit" name="login" class="btn btn-outline-dark btn-lg m-1 submit ">ALL</button>
-        </div>
+        <form action="">
+        <div class="mb-3 p-2">
+
+            <select name="course" class="form-select" id="course">
+                        <option value="btech">Btech</option>
+                        <option value="bca">BCA</option>
+                        <option value="mtech">Mtech</option>
+                        <option value="ba">BA</option>
+                        <option value="bba">BBA</option>
+                        <option value="mca">MCA</option>
+                        <option value="ma">MA</option>
+                        <option value="bcom">BCOM</option>
+        </select>
+</div>
+        <div class="mb-3 p-2">
+
+        <select name="sem" id="sem" class="form-select">
+                      <option value="1">1st</option>
+                        <option value="2">2nd</option>
+                        <option value="3">3rd</option>
+                        <option value="4">4th</option>
+                        <option value="5">5th</option>
+                        <option value="6">6th</option>
+                        <option value="7">7th</option>
+                        <option value="8">8th</option>
+        </select>
+</div>
+    </form>
+    
+
+    <div id="users"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function() {
+    function fetchusers() {
+    let course = $('#course').val();
+    let sem = $('#sem').val();
+    
+    $.ajax({
+        url: 'allotment.php', // Adjust the path if your PHP file is in a different directory.
+        type: 'POST',
+        data: {
+            course: course,
+            sem: sem
+        },
+        success: function(response) {
+            $('#users').html(response);
+        }
+    });
+}
+
+// Trigger fetchUsers function whenever the selects change
+$('#course, #sem').change(fetchusers);
+
+// Optionally, call fetchUsers on page load if you want to display some default data
+fetchusers();
+});
+</script>
+<div class="d-flex" style="padding-left:88%">
+<button type="submit" name="login" class="btn btn-outline-dark btn-lg m-1 submit ">ALL</button>
+</div>
        
         <div class="d-flex" style="padding-left:88%">
 

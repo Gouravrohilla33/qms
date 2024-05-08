@@ -60,9 +60,8 @@ $result = $con->query($sql);
 while($row = $result->fetch_assoc()){
   
   ?>
-                        <option value="<?php echo $row['subject']; ?>"><?php echo $row['subject']; ?></option>
-                       <?php }?>
-                    </select>
+              <option value="<?php echo $row['subject']; ?>"><?php echo $row['subject']; ?></option>
+        <?php }?>                  </select>
           </div>
           <div class="mb-2 p-2">
             <input type="file" name="file" class="form-control" id="exampleInputfile" required>
@@ -72,6 +71,7 @@ while($row = $result->fetch_assoc()){
             <button type="submit" class="btn btn-primary" name="upload">upload</button>
           </div>
       </form>
+      
     </div>
   </div>
 </div>
